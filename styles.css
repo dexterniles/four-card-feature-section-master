@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Open-Sans";
+    src: url(fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -11,4 +16,86 @@
 
 .attribution a {
     color: hsl(228, 45%, 44%); 
+}
+
+body {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 74px;
+    height: 100dvh;
+    font-family: "Open-Sans";
+}
+
+.title-wrapper {
+    display: flex;
+    width: 540px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+}
+
+h2 {
+    color: #4d4f62;
+    font-size: 36px;
+    font-weight: 275;
+    line-height: 140%;
+    letter-spacing: 0.25px;
+}
+
+h1 {
+    color: #4d4f62;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.25px;
+    text-align: center;
+}
+
+.title-wrapper p {
+    color: #4d4f62;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.104px;
+    text-align: center;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background-color: white;
+    width: 1114px;
+    height: 532px;
+}
+
+.content {
+    display: flex;
+    width: 350px;
+    height: 250px;
+    padding: var(--spacing-400, 32px);
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 32px;
+    background-color: white;
+    border: 2px solid red;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.50);
+}
+
+.content-wrapper {
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    
 }
